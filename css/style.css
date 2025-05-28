@@ -1,0 +1,163 @@
+    body {
+        font-family: Arial, sans-serif;
+        justify-items: center;
+        background-color: rgb(224, 203, 175);
+        padding: 20px;
+        margin: 0;
+    }
+
+    main { 
+        max-width: 600px;
+        padding: 24px;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        background-color: rgb(148, 182, 182);
+        margin: auto;
+        margin-bottom: 4px;
+        align-items: center;
+    }
+
+    label {
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+        margin-bottom: 20px;
+        display: block;
+        font-weight: bold;
+    }
+
+    h1, h2 {
+        text-align: center;
+        color: rgb(0, 0, 0);
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            margin-top: 5px;
+             display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+    }
+
+    .button {
+        margin-top: 15px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    button {
+        border: none;
+        padding: 10px 20px;
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .rumus-content {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+button:nth-child(1) { background-color: #009688;}
+button:nth-child(2) { background-color: #f44336;}
+button:nth-child(3) { background-color: #2196F3;}
+
+.cara {
+    margin-top: 25px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px dashed #ccc;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Animation for header and h1 */
+header, h2 {
+    position: relative;
+    text-align: center;
+    animation: fadeInLeft 2s ease-in forwards;
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+h2 {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+h1 {
+    animation: glowText 2s infinite alternate;
+}
+
+@keyframes glowText {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    main {
+        padding: 16px;
+        border-radius: 12px;
+    }
+
+    input[type="number"],
+    textarea {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .button {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    h1, h2 {
+        font-size: 24px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    .rumus-content {
+        font-size: 18px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    .cara {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
