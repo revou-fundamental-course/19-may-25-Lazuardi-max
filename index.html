@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Konversi Suhu</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+  <header> 
+         <h1>Website Konversi Suhu</h1>
+  </header>
+
+  <main>
+    <section>
+        <h2>Konversi Suhu Celcius (°C) ke Fahrenheit (°F)</h2>
+        <p>Masukan suhu dalam Celcius (°C) untuk mengkonversinya ke Fahrenheit (°F).</p>
+        <p>Untuk mengkonversi suhu dari Fahrenheit (°F) ke Celcius (°C), klik tombol "Reverse"</p>
+    </section>
+ 
+    <form class="container"> 
+        <div> 
+            <label id="labelInput" for="celcius"> Celcius (&deg;C)</label>
+            <input type="number" id="celcius" placeholder="Masukan suhu disini">
+        </div> 
+
+        <div class="button"> 
+            <button class="convert">Konversi</button>
+            <button class="reset">Reset</button>
+            <button class="reverse">Reverse</button> 
+        </div> 
+    </form>
+
+    <section> 
+  
+        <div>
+
+            <label id="labelOutput" for="fahrenheit"> Fahrenheit (&deg;F):</label>
+            <textarea id="fahrenheit" readonly> </textarea>
+
+        </div>
+    </section>
+  
+    <section>
+        <div>
+
+            <label for="cara"> Cara kalkulasi</label>
+            <textarea id="cara" readonly></textarea>   
+
+        </div>
+    </section>
+
+    <section>
+        <header>
+
+            <h2>Rumus konversi Celcius (°C) : ke Fahrenheit (°F)</h2>
+        
+        </header>
+
+        <hr />
+
+        <div>
+            <p>Suhu<sub> (°F):</sub> = (Suhu(°C): x 9/5) + 32</p>
+            <p> Atau </p>
+            <p>Suhu<sub> (°F):</sub> = (Suhu(°C): x 1.8) + 32 </p>
+
+        </div>
+    </section>
+    
+  </main>
+
+        <footer> 
+
+        <p> &copy; 2025 Khamam Lazuardi</p>
+
+        </footer>
+        <script src="js/script.js"></script>
+
+    </body>
+    </html>
