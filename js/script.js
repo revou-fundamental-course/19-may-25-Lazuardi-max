@@ -10,6 +10,7 @@ function convert() {
          return;   
       }    
 
+      
 let result, text;
 const suhu = parseFloat(inputValue);
 
